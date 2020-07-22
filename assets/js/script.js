@@ -19,14 +19,8 @@ const cats = [
     },
     {
         id: 4,
-        name: 'Lady',
-        photo: './assets/images/lady-cat.jpg',
-        count: 0
-    },
-    {
-        id: 5,
-        name: 'Simba and Nala',
-        photo: './assets/images/simba-e-nala.jpg',
+        name: 'Doritos',
+        photo: './assets/images/doritos.jpg',
         count: 0
     }
 ];
