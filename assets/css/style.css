@@ -1,8 +1,35 @@
-#cats {
-    display: flex;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-img {
+.main {
     width: 500px;
     height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.side-menu {
+    position: absolute;
+    left: -60px;
+}
+
+.cat-list__img {
+    object-fit: cover;
+    height: 50px;
+    transition: .3s all;
+    width: 50px;
+}
+
+.cat-list__img:hover {
+    height: 100px;
+    width: 100px;
+}
+
+.cat-content__img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
