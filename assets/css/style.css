@@ -26,6 +26,7 @@ ul {
 .cat-list__img:hover {
     height: 100px;
     width: 100px;
+    box-shadow: 6px 4px 6px rgb(76 66 66);
 }
 
 .cat-content__img {
