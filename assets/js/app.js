@@ -24,6 +24,12 @@
             name: 'Doritos',
             photo: './assets/images/doritos.jpg',
             count: 0
+        },
+        {
+            id: 5,
+            name: 'Chill',
+            photo: './assets/images/chill.jpg',
+            count: 0
         }]
     };
 
@@ -125,6 +131,7 @@
             this.clicks = document.getElementById('clicks');
             this.formAdmin = document.getElementById('formAdmin');
             this.adminButton = document.getElementById('adminButton');
+            this.cancelButton = document.getElementById('cancelButton');
             this.catMain = document.getElementById('catMain');
 
             this.formAdmin.addEventListener('submit', function (event) {
@@ -135,7 +142,11 @@
 
             this.adminButton.addEventListener('click', function () {
                 catMain.classList.toggle('cat-content__main--open-admin');
-            })
+            });
+
+            this.cancelButton.addEventListener('click', function () {
+                catAdminView.render();
+            });
 
             this.render();
         },
