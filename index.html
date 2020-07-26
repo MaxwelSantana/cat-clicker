@@ -18,10 +18,20 @@
             <div id="catMain" class="cat-content__main">
                 <img id="catImage" class="cat-content__img" src="">
                 <div class="cat-content__admin">
-                    <span>TESTE</span>
+                    <form action="/action_page.php" id="formAdmin">
+                        <input type="text" id="idCat" name="id" hidden value="">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" value=""><br>
+                        <label for="url">Url:</label><br>
+                        <input type="text" id="url" name="url" value=""><br>
+                        <label for="clicks">Clicks:</label><br>
+                        <input type="number" id="clicks" name="clicks" value=""><br><br>
+                        <input type="submit" id="submitAdmin" value="Submit">
+                    </form>
                 </div>
             </div>
             <h2 id="catName"><span id="catCounter">0</span></h2>
+            <button id="adminButton">Admin</button>
         </section>
     </main>
 
